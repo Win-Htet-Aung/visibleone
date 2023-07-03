@@ -16,6 +16,7 @@ run the following commands:
 ```
 pip install -r requirements.txt
 cd DjangoAPI
+python manage.py migrate
 python manage.py runserver
 ```
 the server will be running at http://localhost:8000.
