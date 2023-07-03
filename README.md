@@ -53,7 +53,7 @@ It's the same as steps in No. 2.
 
 ### The API routes
 - **Endpoint** : [POST] http://localhost:8000/graphql
-- **Request Body** : ```{"query": "{challenges}"}```
+- **Request Body** : ```{"query":"{challenges{ChallengeID,ChallengeName,ChallengeSucessRate}}"}```
 - **Headers** : 
 	- Content-Type : application/json
 - **Response** : 
@@ -61,9 +61,21 @@ It's the same as steps in No. 2.
 {
 	"data": {
 		"challenges": [
-			"{\"ChallengeID\": \"1\", \"ChallengeName\": \"Write Python Script\", \"ChallengeSucessRate\": \"50\"}",
-			"{\"ChallengeID\": \"2\", \"ChallengeName\": \"Sample HTML development\", \"ChallengeSucessRate\": \"100\"}",
-			"{\"ChallengeID\": \"3\", \"ChallengeName\": \"Setup web server\", \"ChallengeSucessRate\": \"80\"}"
+			{
+				"ChallengeID": 1,
+				"ChallengeName": "Write Python Script",
+				"ChallengeSucessRate": "50.00"
+			},
+			{
+				"ChallengeID": 2,
+				"ChallengeName": "Sample HTML development",
+				"ChallengeSucessRate": "100.00"
+			},
+			{
+				"ChallengeID": 3,
+				"ChallengeName": "Setup web server",
+				"ChallengeSucessRate": "80.00"
+			}
 		]
 	}
 }
