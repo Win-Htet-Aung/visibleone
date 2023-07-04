@@ -28,19 +28,19 @@ the server will be running at http://localhost:8000.
 {
 	"challenges": [
 		{
-			"ChallengeID": "1",
+			"ChallengeID": 1,
 			"ChallengeName": "Write Python Script",
-			"ChallengeSucessRate": "50"
+			"ChallengeSucessRate": "50.00"
 		},
 		{
-			"ChallengeID": "2",
+			"ChallengeID": 2,
 			"ChallengeName": "Sample HTML development",
-			"ChallengeSucessRate": "100"
+			"ChallengeSucessRate": "100.00"
 		},
 		{
-			"ChallengeID": "3",
+			"ChallengeID": 3,
 			"ChallengeName": "Setup web server",
-			"ChallengeSucessRate": "80"
+			"ChallengeSucessRate": "80.00"
 		}
 	]
 }
