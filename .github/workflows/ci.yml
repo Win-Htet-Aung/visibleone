@@ -1,0 +1,21 @@
+name: Testing CI
+
+on:
+  push:
+    tags:
+      - '*'
+jobs:
+  build:
+    name: "Build"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version-file: pyproject.toml
+      - name: Install Dependencies
+        run: |
+          poetry env use python3
+          poetry shell
+          poetry install
