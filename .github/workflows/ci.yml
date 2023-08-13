@@ -17,5 +17,5 @@ jobs:
         uses: Gr1N/setup-poetry@v8
       - run: |
           poetry env use python3
-          poetry shell
+          source $(poetry env info --path)/bin/activate
           poetry install
