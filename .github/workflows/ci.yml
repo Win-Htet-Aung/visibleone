@@ -12,9 +12,10 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version-file: pyproject.toml
+          python-version: "3.11"
       - name: Install Dependencies
-        run: |
+        uses: Gr1N/setup-poetry@v8
+      - run: |
           poetry env use python3
           poetry shell
           poetry install
