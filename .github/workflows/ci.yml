@@ -2,8 +2,7 @@ name: Testing CI
 
 on:
   push:
-    tags:
-      - '*'
+    branches: [ "master" ]
 jobs:
   build:
     name: "Build"
